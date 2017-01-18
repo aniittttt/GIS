@@ -1,16 +1,26 @@
-## Latar Belakang Masalah :
-1. OpenLayers
-2. Overlay
-3. Contoh Overlay Pada OpenLayers
-
-## OpenLayers
-OpenLayers merupakan Library JavaScript untuk menempatkan peta dinamis di halaman web. OpenLayers dapat menampilkan map tiles, data vektor dan marker dari sumber manapun. OpenLayers dikembangkan untuk lebih memanfaatkan semua jenis informasi geografis dan dirilis dibawah lisensi FreeBSD.
-
 ## Overlay
-Overlay merupakan proses penempatan grafis suatu peta diatas grafis peta lainnya agar menghasilkan gabungan kedua peta yang memiliki informasi atribut dari kedua peta tersebut. Teknik overlay dalam sistem informasi geografis ada 2 yaitu gabungan (union) dan irisan (intersect).
+
+# Latar Belakang Masalah
+Overlay merupakan kemampuan untuk menempatkan garis satu peta diatas grafis peta yang lain dan menampilkan hasilnya di layar komputer atau pada plot
+
+# Permasalahan dan Solusi Masalah
+Teknik overlay dalam peta ada 2 yaitu union dan intersect. Union adalah gabungan dan intersect adalah irisan. Beberapa lapisan overlay, yaitu :
+1. Dissolve Themes 
+Menghilangkan batas antara poligon yang mempunyai data atribut  yang identik atau sama dalam poligon yang berbeda 
+2. Merge Themes
+Penggabungan 2 atau lebih layer menjadi 1 buah layer dengan atribut yang berbeda dan atribut-atribut tersebut saling mengisi atau bertampalan, dan layer-layernya saling menempel satu sama lain.
+3. Clip One Themes
+Menggabungkan data namun dalam wilayah yang kecil, misalnya berdasarkan wilayah administrasi desa atau kecamatan.
+4. Intersect Themes
+Memotong sebuah tema atau layer input atau masukan dengan atribut dari tema atau overlay untuk menghasilkan output dengan atribut yang memiliki data atribut dari kedua theme.
+5. Union Themes
+Menggabungkan fitur dari sebuah tema input dengan poligon dari tema overlay untuk menghasilkan output yang mengandung tingkatan atau kelas atribut
+6. Assign Data Themes
+Menggabungkan data untuk fitur theme kedua ke fitur theme pertama yang berbagi lokasi yang sama Secara mudahnya yaitu menggabungkan kedua tema dan atributnya
+
 
 ## Contoh Overlay Pada OpenLayers
-Contoh overlay pada OpenLayers bisa dilihat di https://openlayers.org/en/latest/examples/overlay.html, untuk menampilkan peta Indonesia dan membuat marker kota anda, contohnya adalah sebagai berikut :
+
 ~~~
 <!DOCTYPE html>
 <html>
@@ -253,23 +263,7 @@ Hasil dari code diatas :
 </p>
 
 ## Kesimpulan
-Jadi, OpenLayers merupakan Library JavaScript untuk menempatkan peta dinamis di halaman web, dan Overlay merupakan proses penempatan grafis suatu peta diatas grafis peta lainnya agar menghasilkan gabungan kedua peta yang memiliki informasi atribut dari kedua peta tersebut.
+Overlay proses penyatuan data dari lapisan layer yang berbeda
 
 ## Saran
-Diharapkan memahami materi secara mendetail dan memahami praktikum dengan benar.
-<br>
-* Nama : Bayu Rahmad Azhari
-* NPM : 1144125
-* Kelas : 3C
-* Prodi : D4 Teknik Informatika
-* Kampus : Politeknik Pos Indonesia
-
-Link Matakuliah : http://kampus.awangga.net/assignments/sisteminformasigeografis2016
-
-Referensi : 
-* https://openlayers.org/
-* http://www.guntara.com/2013/01/pengertian-overlay-dalam-sistem.html
-
-Scan Plagiarisme :
-* https://drive.google.com/open?id=0B5FSMUsdCMU4ckxZa1dGb08zZnc
-* https://drive.google.com/open?id=0B5FSMUsdCMU4aE5ISFBBcDJSNGc 
+Untuk lebih mengetahui tentang overlay perlu adanya praktik lebih lanjut
